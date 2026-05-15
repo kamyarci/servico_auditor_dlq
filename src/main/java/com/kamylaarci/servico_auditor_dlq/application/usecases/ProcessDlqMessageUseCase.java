@@ -3,7 +3,6 @@ package com.kamylaarci.servico_auditor_dlq.application.usecases;
 import com.kamylaarci.servico_auditor_dlq.application.dtos.request.OrderEventDTO;
 import com.kamylaarci.servico_auditor_dlq.application.mapper.OrderEventMapper;
 import com.kamylaarci.servico_auditor_dlq.domain.contracts.IAuditRepository;
-import com.kamylaarci.servico_auditor_dlq.domain.exceptions.DomainException;
 import com.kamylaarci.servico_auditor_dlq.domain.model.AuditRecord;
 import com.kamylaarci.servico_auditor_dlq.domain.model.OrderEvent;
 import com.kamylaarci.servico_auditor_dlq.domain.model.Severity;
