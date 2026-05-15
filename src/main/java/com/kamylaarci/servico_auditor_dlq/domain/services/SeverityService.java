@@ -3,7 +3,9 @@ package com.kamylaarci.servico_auditor_dlq.domain.services;
 import com.kamylaarci.servico_auditor_dlq.domain.model.OrderEvent;
 import com.kamylaarci.servico_auditor_dlq.domain.model.OrderItem;
 import com.kamylaarci.servico_auditor_dlq.domain.model.Severity;
+import org.springframework.stereotype.Service;
 
+@Service
 public class SeverityService {
 
     public Severity calculate(OrderEvent event) {
