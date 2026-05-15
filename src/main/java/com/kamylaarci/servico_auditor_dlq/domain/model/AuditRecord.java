@@ -25,7 +25,7 @@ public class AuditRecord {
         this.severity = severity;
     }
 
-    public AuditRecord(){
+    public AuditRecord() {
 
     }
 

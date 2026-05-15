@@ -23,7 +23,7 @@ public class OrderEvent {
         this.occurredAt = occurredAt;
     }
 
-    public OrderEvent(){
+    public OrderEvent() {
 
     }
 

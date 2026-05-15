@@ -6,15 +6,15 @@ import com.kamylaarci.servico_auditor_dlq.domain.model.Severity;
 
 public class SeverityService {
 
-    public Severity calculate(OrderEvent event){
-         double totalProductAmount;
+    public Severity calculate(OrderEvent event) {
+        double totalProductAmount;
 
         totalProductAmount = event.getOrderItems()
                 .stream()
                 .mapToInt(OrderItem::getAmount)
                 .sum();
 
-        if(totalProductAmount > 100){
+        if (totalProductAmount > 100) {
             return Severity.HIGH;
         } else if (totalProductAmount >= 50) {
             return Severity.MEDIUM;

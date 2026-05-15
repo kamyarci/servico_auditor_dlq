@@ -9,7 +9,7 @@ public class OrderItem {
         this.amount = amount;
     }
 
-    public OrderItem(){
+    public OrderItem() {
 
     }
 
