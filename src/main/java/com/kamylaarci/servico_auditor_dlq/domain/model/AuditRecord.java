@@ -1,16 +1,17 @@
 package com.kamylaarci.servico_auditor_dlq.domain.model;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 
 public class AuditRecord {
-    private String errorId;
+    private UUID errorId;
     private String queueName;
     private String payload;
     private LocalDateTime timestamp;
     private String status;
     private Severity severity;
 
-    public AuditRecord(String errorId,
+    public AuditRecord(UUID errorId,
                        String queueName,
                        String payload,
                        LocalDateTime timestamp,
@@ -29,7 +30,7 @@ public class AuditRecord {
 
     }
 
-    public String getErrorId() {
+    public UUID getErrorId() {
         return errorId;
     }
 

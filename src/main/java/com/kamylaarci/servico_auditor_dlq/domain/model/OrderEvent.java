@@ -8,13 +8,13 @@ public class OrderEvent {
     private Integer customerId;
     private List<OrderItem> orderItems;
     private String origin;
-    private LocalDateTime occurredAt;
+    private String occurredAt;
 
     public OrderEvent(String zipCode,
                       Integer customerId,
                       List<OrderItem> orderItems,
                       String origin,
-                      LocalDateTime occurredAt
+                      String occurredAt
     ) {
         this.zipCode = zipCode;
         this.customerId = customerId;
@@ -43,7 +43,7 @@ public class OrderEvent {
         return origin;
     }
 
-    public LocalDateTime getOccurredAt() {
+    public String getOccurredAt() {
         return occurredAt;
     }
 }
